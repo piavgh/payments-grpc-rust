@@ -1,5 +1,5 @@
 [package]
-name = "bitcoin-grpc-rust"
+name = "ethereum-grpc-rust"
 version = "0.1.0"
 edition = "2021"
 

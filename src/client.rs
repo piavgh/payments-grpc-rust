@@ -10,8 +10,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut client = EthereumClient::connect("http://[::1]:50051").await?;
 
     let request = tonic::Request::new(EthPaymentRequest {
-        from_addr: "2B1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa".to_owned(),
-        to_addr: "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa".to_string(),
+        from_addr: "0x8986dacd4E5E27312f61c0b373C46058FC7B5f87".into(),
+        to_addr: "0x8986dacd4E5E27312f61c0b373C46058FC7B5f87".into(),
         amount: 1234,
     });
 
