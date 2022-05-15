@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package payments;
+
+service Ethereum {
+    rpc SendPayment (ETHPaymentRequest) returns (ETHPaymentResponse);
+}
+
+message ETHPaymentRequest {
+    string from_addr = 1;
+    string to_addr = 2;
+    uint32 amount = 3;
+}
+
+message ETHPaymentResponse {
+    bool successful = 1;
+    string message = 2;
+}
